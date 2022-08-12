@@ -37,35 +37,220 @@
 /* General Styles */
 
 body {
-    font-family: "Roboto",sans-serif;
-    color: var(--color-gray-200);
-    line-height: 1.7;
-    overflow-x: hidden;
-    background: var(--color-gray-600);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-gray-200);
+  line-height: 1.7;
+  overflow-x: hidden;
+  background: var(--color-gray-600);
 }
 
-.container{
-    width: var(--container-width-lg);
-    max-width: 1920px;
-    margin-inline: auto;
+.container {
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
 }
 
-h1,h2,h3,h4,h5{
-    line-height: 1.2;
-    color: var(--color-gray-100);
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: var(--color-gray-100);
 }
-h1{
-    font-size: 3rem;
+h1 {
+  font-size: 3rem;
 }
-h2{
+h2 {
+  font-size: 2rem;
+}
+a {
+  color: var(--color-gray-100);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.btn {
+  color: var(--color-gray-100);
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+  background: var(--color-primary);
+  border-radius: 5rem;
+  transition: var(--transition);
+  /* transform: scale(1.1); */
+}
+
+.btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.btn.lg {
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+}
+
+.btn.sm {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+}
+.btn.sm:hover {
+  background: var(--color-gray-100);
+}
+
+/* Programming Section General */
+
+section {
+  margin-top: 10rem;
+}
+
+.section__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section__head span {
+  background: var(--color-gray-500);
+  padding: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  color: var(--color-secondary);
+  font-size: 2.5rem;
+}
+
+/* Card Class */
+.card {
+  background: var(--color-gray-500);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 5rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-gray-400);
+  cursor: default;
+}
+
+.card span {
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-primary);
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.card:hover span {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.card small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 400;
+}
+
+
+/* Header Components For Main Pages */
+.header {
+  margin-top: 5rem;
+  height: 20rem;
+  overflow: hidden;
+  border-bottom: 2px solid var(--color-gray-400);
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  background: black;
+  place-items: center;
+}
+.header__container-bg {
+  position: absolute;
+  width: 100%;
+}
+.header__container-bg img {
+  opacity: 0.5;
+}
+.header__content {
+  position: relative;
+  width: 44%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-gray-100);
+}
+.header__content h2 {
+  margin-bottom: 1rem;
+}
+.header__content p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Media Queries For Overall Project */
+
+/* Medium devices */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
     font-size: 2rem;
-}
-a{
-    color: var(--color-gray-100);
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  /* Header Component */
+
+  .header__content {
+    width: 76%;
+  }
 }
 
-img{
-    display: block;
-    object-fit: cover;
-    width: 100%;
+/* small Devices */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  /* Header Component */
+
+  .header {
+    height: fit-content;
+  }
+  section {
+    margin-top: 7rem;
+  }
+  .header__content {
+    width: var(--container-width-md);
+    padding: 3rem 0;
+  }
+  .header__content p {
+    font-size: 0.8rem;
+  }
 }
