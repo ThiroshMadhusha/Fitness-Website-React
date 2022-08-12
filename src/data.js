@@ -175,10 +175,17 @@ export const testimonials = [
   },
 ];
 
-export const gallery = [
+const Trainer1 = require("./assets/avatar/t1.webp")
+const Trainer2 = require("./assets/team/t2.webp");
+const Trainer3 = require("./assets/team/t3.webp");
+const Trainer4 = require("./assets/team/t4.webp");
+
+
+
+export const trainers = [
   {
     id: 1,
-    image: "Trainer1",
+    image: Trainer1,
     name: "Thirosh Madhusha",
     job: "Body Composition Trainer",
     socials: [
@@ -190,7 +197,7 @@ export const gallery = [
   },
   {
     id: 2,
-    image: "Trainer2",
+    image: Trainer2,
     name: "Kasun Chamara",
     job: "Body Composition Trainer",
     socials: [
@@ -202,7 +209,7 @@ export const gallery = [
   },
   {
     id: 3,
-    image: "Trainer3",
+    image: Trainer3,
     name: "Kushi Aksha",
     job: "Body Composition Trainer",
     socials: [
@@ -214,19 +221,7 @@ export const gallery = [
   },
   {
     id: 4,
-    image: "Trainer4",
-    name: "Dineth Perera",
-    job: "Body Composition Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
-  },
-  {
-    id: 5,
-    image: "Trainer1",
+    image: Trainer2,
     name: "Sunil Gamage",
     job: "Body Composition Trainer",
     socials: [
@@ -237,8 +232,21 @@ export const gallery = [
     ],
   },
   {
+    id: 5,
+    image: Trainer4,
+    name: "Dineth Perera",
+    job: "Body Composition Trainer",
+    socials: [
+      "https://instagram.com/",
+      "https://twitter.com/",
+      "https://facebook.com/",
+      "https://linkedin.com/",
+    ],
+  },
+
+  {
     id: 6,
-    image: "Trainer2",
+    image: Trainer1,
     name: "Dasun Chamara",
     job: "Body Composition Trainer",
     socials: [
@@ -246,6 +254,63 @@ export const gallery = [
       "https://twitter.com/",
       "https://facebook.com/",
       "https://linkedin.com/",
+    ],
+  },
+];
+
+export const plans = [
+  {
+    id: 1,
+    name: "Basic Package",
+    desc: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used.",
+    price: 29.99,
+    feactures: [
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: false },
+    ],
+  },
+  {
+    id: 2,
+    name: "Medium Package",
+    desc: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used.",
+    price: 63.79,
+    feactures: [
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: false },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: false },
+    ],
+  },
+  {
+    id: 3,
+    name: "Pro Package",
+    desc: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used.",
+    price: 109.19,
+    feactures: [
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
+      { feacture: "First Feacture", available: true },
     ],
   },
 ];
