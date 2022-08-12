@@ -271,9 +271,9 @@ footer {
   color: var(--color-gray-600);
 }
 
-.footer__icon {
+/* .footer__icon {
   background: var(--color-gray-100);
-}
+} */
 
 .footer__icon:hover {
   background: var(--color-primary);
