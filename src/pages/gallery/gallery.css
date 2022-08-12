@@ -1,0 +1,26 @@
+
+.gallery__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 2rem;
+}
+
+.gallery__image{
+    width: 20.5rem;
+    height: 19.5rem;
+    border-radius: 5rem;
+    align-items: center;
+}
+
+.gallery__container article{
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.gallery__container article:hover{
+    border-color: var(--color-gray-500);
+}
