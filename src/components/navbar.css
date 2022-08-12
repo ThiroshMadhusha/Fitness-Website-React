@@ -1,11 +1,12 @@
 /* Nav Bar CSS */
 nav {
-  height: 6rem;
+  height:6rem;
   width: 100vw;
   background: var(--color-primary);
   display: grid;
   place-items: center;
-  position: flex;
+  /* meke position eka flex karoth nav bar eka ekkama full page ekama move wenawa. position eka fixed karama nav bar eka thiyeddi ithuru tika witharak move wenawa */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
@@ -25,7 +26,8 @@ nav {
 }
 
 .logo {
-  width: 5rem;
+  width: 15rem;
+  display: block;
 }
 .nav__links {
   display: flex;

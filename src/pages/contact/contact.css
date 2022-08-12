@@ -1,0 +1,42 @@
+
+.contact__container{
+    display: grid;
+    place-items: center;
+}
+.contact__wrapper{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+
+.contact__wrapper a{
+    background: var(--color-primary);
+    font-size: 2rem;
+    height: 5rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding:1rem;
+    border-radius: 2rem;
+}
+
+.contact__wrapper a:hover{
+    background: transparent;
+    background: var(--color-gray-100);
+    color: var(--color-primary);
+}
+
+/* Small devices */
+
+@media screen and (max-width: 600px){
+    .contact__wrapper{
+        gap: 1.5rem;
+    }
+    .contact__wrapper a{
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+        height: 4rem;
+    }
+   
+}
