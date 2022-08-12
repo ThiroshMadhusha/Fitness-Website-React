@@ -1,0 +1,11 @@
+.notfound__container{
+    text-align: center;
+    padding-top: 8rem;
+}
+.notfound__container .btn{
+    margin-top: 2rem;
+    display: inline-block;
+}
+.notfound{
+    color: var(--color-secondary);
+}

@@ -1,0 +1,59 @@
+
+.plans__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.plan h3{
+    margin-bottom: 1rem;
+}
+.plan small{
+    margin-bottom: 2rem;
+}
+.plan h1{
+    color: var(--color-primary);
+    display: inline;
+}
+.plan h2{
+    display: inline;
+    color: var(--color-gray-400);
+}
+.plan h4{
+    margin-top: 2rem;
+}
+.plan p{
+    margin-top: 1rem;
+    color: var(--color-gray-100);
+}
+.plan p.disabled{
+    color: var(--color-gray-400);
+}
+.plan button{
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Medium Devices */
+@media screen and (max-width:1024px) {
+    .plans__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+}
+
+/* Small Device */
+
+@media screen and (max-width:600px) {
+    .plans__container{
+        grid-template-columns: 1fr;
+    }
+    .plan{
+        width: 90%;
+        margin-inline: auto;
+
+    }
+    
+}

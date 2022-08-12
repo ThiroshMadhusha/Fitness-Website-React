@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/Logo.png";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 
@@ -33,7 +33,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FaFacebookF className="footer__icon" />
+              <FaFacebook className="footer__icon" />
             </a>
             <a
               href="https://instagram.com/"
